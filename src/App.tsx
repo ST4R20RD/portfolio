@@ -1,15 +1,14 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Navbar, Footer } from "./components";
-import { Outlet } from "react-router-dom";
+import { Navbar, Footer, Projects, AboutMe, Presentation } from "./components";
 
 function App() {
   return (
-    <div >
+    <div className="bg-gray-900 h-screen">
       <Navbar />
-      <Outlet />
-      <Footer/>
+      <Presentation />
+      <Projects />
+      <AboutMe />
+      <Footer />
     </div>
   );
 }
