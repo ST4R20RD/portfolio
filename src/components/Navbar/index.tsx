@@ -10,7 +10,7 @@ function NavButton({ to, label, color, size }: any) {
 
 export function Navbar() {
   return (
-    <nav className="sticky max-w-fit m-auto bg-slate-800 border-gray-200 px-2 py-2.5 rounded-full">
+    <nav className="sticky top-0 max-w-fit m-auto bg-slate-800 border-gray-200 px-2 py-2.5 rounded-full">
       <div className="flex flex-wrap justify-center items-center">
         <FunctionStyle label="const" />
         <a href="/">
