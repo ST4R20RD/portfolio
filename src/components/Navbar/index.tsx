@@ -1,13 +1,11 @@
+import { FunctionStyle } from "../FunctionStyle";
+
 function NavButton({ to, label, color, size }: any) {
   return (
-    <a href={`#${to}`} className={`font-todays text-${size}xl block py-2 ${color}`}>
+    <a href={`#${to}`} className={`font-todays ${size} block py-2 ${color}`}>
       {label}
     </a>
   );
-}
-
-function FunctionStyle({ label }: any) {
-  return <span className="text-gray-500 font-consolas italic px-2">{label}</span>;
 }
 
 export function Navbar() {
@@ -16,7 +14,7 @@ export function Navbar() {
       <div className="flex flex-wrap justify-center items-center">
         <FunctionStyle label="const" />
         <a href="/">
-          <span className="self-center text-5xl font-todays font-semibold whitespace-nowrap text-white">
+          <span className="self-center text-5xl font-todays font-semibold whitespace-nowrap text-amber-100">
             GonçaloEstrelado
           </span>
         </a>
@@ -24,11 +22,15 @@ export function Navbar() {
         <div className="">
           <div className="flex items-center">
             <FunctionStyle label="((" />
-            <NavButton label="Projects" color="text-blue-400" size="4" />
+            <NavButton label="Projects" color="text-blue-400" size="text-4xl" />
             <FunctionStyle label="," />
-            <NavButton label="About Me" color="text-blue-400" size="4" />
+            <NavButton label="About Me" color="text-blue-400" size="text-4xl" />
             <FunctionStyle label=") => {" />
-            <NavButton label="HIRE ME" color="text-purple-400" size="5" />
+            <NavButton
+              label="HIRE ME"
+              color="text-purple-400"
+              size="text-5xl"
+            />
             <FunctionStyle label="})" />
           </div>
         </div>
