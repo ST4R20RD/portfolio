@@ -19,17 +19,15 @@ export function Presentation() {
       <div className="flex flex-col items-center">
         <div className="flex flex-col max-w-[430px]">
           <FunctionStyle label="<h1" />
-          <div className="flex flex-col text-center font-todays text-7xl">
+          <div className="flex flex-col text-center">
             <span className="text-primary-gray text-lg mx-5">Hi, i'm</span>
-            <p className="text-primary-white">Gonçalo</p>
+            <h1 className="text-primary-white uppercase">Gonçalo</h1>
           </div>
           <FunctionStyle label="/>" classname="ml-auto mr-0" />
         </div>
         <div className="my-4">
           <FunctionStyle label="<p" />
-          <span className="text-cyan-700 font-todays text-2xl">
-            Junior Web Developer
-          </span>
+          <span className="text-cyan-700 text-2xl">Junior Web Developer</span>
           <FunctionStyle label="/>" />
         </div>
         <div className="flex flex-col">
@@ -39,9 +37,7 @@ export function Presentation() {
               {SKILLS.map((skill, index) => {
                 return (
                   <span className="flex items-end">
-                    <p className="font-todays text-cyan-400 text-3xl">
-                      {skill}
-                    </p>
+                    <p className="text-cyan-400 text-3xl">{skill}</p>
                     {index + 1 !== SKILLS.length && <FunctionStyle label="," />}
                   </span>
                 );

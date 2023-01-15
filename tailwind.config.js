@@ -5,7 +5,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        todays: ["Todays", "sans-serif"],
         consolas: ["Consolas", "sans-serif"],
       },
       backgroundImage: {
