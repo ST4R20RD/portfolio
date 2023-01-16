@@ -12,8 +12,8 @@ export function Projects() {
         <h1>Projects</h1>
         <h3>Here are some of my projects.</h3>
         <div className="flex justify-center flex-wrap max-h-[70vh] overflow-y-scroll overflow-x-hidden scrollbar-hide">
-          {PROJECTS.map((project: any) => {
-            return <Card {...project} />;
+          {PROJECTS.map((project, index) => {
+            return <Card key={index} {...project} />;
           })}
         </div>
       </div>

@@ -1,4 +1,12 @@
-export const PROJECTS: any = [
+export const PROJECTS: Array<{
+  image: string;
+  name: string;
+  subTitle: string;
+  description: string;
+  techs: Array<string>;
+  github: string;
+  live: string;
+}> = [
   {
     image: "/images/24grind-frontPic.png",
     name: "24Grind",

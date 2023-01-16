@@ -24,7 +24,7 @@ export function Card({ image, name, subTitle, description, techs, github, live }
       <div className="text-left px-4">
         <p className="text-3xl">{name}</p>
         <p className="text-xl py-2">{subTitle}</p>
-        <p className="max-h-[150px] overflow-y-auto py-2">
+        <div className="max-h-[150px] overflow-y-auto py-2">
           {description.length > 250 ? (
             <div className="flex flex-col">
               {!showMoreDesc ? description.slice(0, 249) + "..." : description}
@@ -32,18 +32,22 @@ export function Card({ image, name, subTitle, description, techs, github, live }
           ) : (
             description
           )}
-        </p>
+        </div>
         <button
           className="m-auto w-full px-2 text-cyan-400"
           onClick={() => setShowMoreDesc(!showMoreDesc)}
         >
           {!showMoreDesc ? "more" : "less"}
         </button>
-        <p className="flex justify-around flex-wrap">
-          {techs.map((tech) => {
-            return <p className="text-zinc-600 pr-2">{tech}</p>;
+        <div className="flex justify-around flex-wrap">
+          {techs.map((tech, index) => {
+            return (
+              <p key={index} className="text-zinc-600 pr-2">
+                {tech}
+              </p>
+            );
           })}
-        </p>
+        </div>
         <div className="flex justify-end text-3xl my-2">
           <a href={github} target="_blank" rel="noreferrer">
             <TbBrandGithub className="mx-4" />

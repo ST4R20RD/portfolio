@@ -8,7 +8,7 @@ export default function LetSkills() {
       <span className="flex">
         {SKILLS.map((skill, index) => {
           return (
-            <span className="flex items-end">
+            <span key={index} className="flex items-end">
               <p className="text-cyan-400 text-3xl">{skill}</p>
               {index + 1 !== SKILLS.length && <FunctionStyle label="," />}
             </span>
