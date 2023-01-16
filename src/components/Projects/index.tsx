@@ -7,14 +7,9 @@ const PROJECTS: any = [
     subTitle: "Every activity's more fun now with friends",
     description:
       "24Grind is a social self-care app that allows users to create, share, and discover self-care activities such as physical, reading, mental lab, and domestic tasks. Users can create an account, log in, create activities, share them with others, rate, and provide feedback. They can also join or create groups, set reminders, track progress, and connect with others. The app has a simple interface, clean design, easy navigation and includes gamification aspects. Note: The app is still in development so not every functionality is currently available in the app.",
-    techs: [
-      "ReactJS",
-      "Typescript",
-      "Tailwind",
-      "Axios",
-      "React-router-dom",
-      "Formik",
-    ],
+    techs: ["ReactJS", "Typescript", "Tailwind", "Axios", "React-router-dom", "Formik"],
+    github: "https://github.com/ST4R20RD/24Grind-frontend",
+    live: "https://24grind.netlify.app/",
   },
   {
     image: "",
