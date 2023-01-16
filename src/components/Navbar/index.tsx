@@ -11,6 +11,7 @@ function NavButton({ to, label, color, size }: any) {
 export function Navbar() {
   return (
     <nav className="z-10 absolute top-0 w-full">
+      <FunctionStyle label="<html>" classname="absolute ml-16 " />
       <div className="bg-primary-gray bg-opacity-30 backdrop-blur-sm border-gray-200 px-8 py-2.5 rounded-b-full m-auto max-w-fit">
         <div className="flex flex-wrap justify-center items-center">
           <FunctionStyle label="const" />
