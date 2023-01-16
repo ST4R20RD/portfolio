@@ -3,6 +3,18 @@ import { FunctionStyle } from "../FunctionStyle";
 const SKILLS = ["NODEJS", "REACTJS", "HTML", "CSS", "TYPESCRIPT", "NPM", "GIT", "JSON", "FIGMA"];
 
 export function Presentation() {
+  const onButtonClick = () => {
+    fetch("CV-16012023.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "CV-16012023.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <section id="presentation" className="flex items-center max-w-fit m-auto h-full">
       <div className="flex flex-col items-center">
@@ -35,7 +47,10 @@ export function Presentation() {
             <FunctionStyle label="]" />
           </div>
           <div className="flex justify-center">
-            <button className="bg-none text-cyan-400 mx-4 p-4 border border-cyan-400 rounded-lg">
+            <button
+              onClick={onButtonClick}
+              className="bg-none text-cyan-400 mx-4 p-4 border border-cyan-400 rounded-lg"
+            >
               Download CV
             </button>
             <a
