@@ -15,16 +15,26 @@ export function Navbar() {
         <FunctionStyle label="const" />
         <a href="/">
           <span className="self-center text-5xl uppercase font-bold whitespace-nowrap text-primary-white">
-            Gonçalo_Estrelado
+            <a
+              href="
+              #presentation"
+            >
+              Gonçalo_Estrelado
+            </a>
           </span>
         </a>
         <FunctionStyle label="=" />
         <div className="">
           <div className="flex items-center">
             <FunctionStyle label="((" />
-            <NavButton label="Projects" color="text-secondary-white" size="text-4xl" />
+            <NavButton
+              to="projects"
+              label="Projects"
+              color="text-secondary-white"
+              size="text-4xl"
+            />
             <FunctionStyle label="," />
-            <NavButton label="About Me" color="text-secondary-white" size="text-4xl" />
+            <NavButton to="aboutme" label="About Me" color="text-secondary-white" size="text-4xl" />
             <FunctionStyle label=") => {" />
             <NavButton label="HIRE ME" color="text-cyan-400" size="text-5xl" />
             <FunctionStyle label="})" />

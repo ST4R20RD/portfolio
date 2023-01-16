@@ -22,14 +22,19 @@ const PROJECTS: any = [
 
 export function Projects() {
   return (
-    <div className="text-primary-white text-center">
-      <h1>Projects</h1>
-      <h3>Here are some of my projects.</h3>
-      <div className="flex justify-center">
-        {PROJECTS.map((project: any) => {
-          return <Card {...project} />;
-        })}
+    <section
+      id="projects"
+      className="text-primary-white text-center h-full flex justify-center items-center"
+    >
+      <div>
+        <h1>Projects</h1>
+        <h3>Here are some of my projects.</h3>
+        <div className="flex justify-center">
+          {PROJECTS.map((project: any) => {
+            return <Card {...project} />;
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

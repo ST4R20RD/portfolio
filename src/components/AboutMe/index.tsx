@@ -3,8 +3,11 @@ import { IoMdSchool } from "react-icons/io";
 
 export function AboutMe() {
   return (
-    <div className="text-primary-white w-full flex justify-center">
-      <div className="flex flex-col items-center bg-primary-gray bg-opacity-30 backdrop-blur-3xl max-w-screen-lg p-10 rounded-lg">
+    <section
+      id="aboutme"
+      className="text-primary-white w-full h-full flex justify-center items-end"
+    >
+      <div className="flex flex-col items-center bg-primary-gray bg-opacity-30 backdrop-blur-3xl max-w-screen-lg p-10 mb-5 rounded-lg">
         <div className="flex flex-col max-w-[350px] mb-8">
           <FunctionStyle label="<h1" />
           <h1>About me</h1>
@@ -54,6 +57,6 @@ export function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

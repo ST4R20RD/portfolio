@@ -1,21 +1,10 @@
 import { FunctionStyle } from "../FunctionStyle";
-import { Contact } from "./../Contact/index";
 
-const SKILLS = [
-  "NODEJS",
-  "REACTJS",
-  "HTML",
-  "CSS",
-  "TYPESCRIPT",
-  "NPM",
-  "GIT",
-  "JSON",
-  "FIGMA",
-];
+const SKILLS = ["NODEJS", "REACTJS", "HTML", "CSS", "TYPESCRIPT", "NPM", "GIT", "JSON", "FIGMA"];
 
 export function Presentation() {
   return (
-    <div className="flex max-w-fit m-auto mt-5">
+    <section id="presentation" className="flex items-center max-w-fit m-auto h-full">
       <div className="flex flex-col items-center">
         <div className="flex flex-col max-w-[430px]">
           <FunctionStyle label="<h1" />
@@ -58,6 +47,6 @@ export function Presentation() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
