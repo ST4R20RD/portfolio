@@ -2,7 +2,7 @@ import { FunctionStyle } from "../FunctionStyle";
 
 function NavButton({ to, label, color, size }: any) {
   return (
-    <a href={`#${to}`} className={`${size} block py-2 ${color} font-semibold`}>
+    <a href={to} className={`${size} block py-2 ${color} font-semibold`}>
       {label}
     </a>
   );
@@ -28,15 +28,25 @@ export function Navbar() {
           <div className="flex items-center">
             <FunctionStyle label="((" />
             <NavButton
-              to="projects"
+              to="#projects"
               label="Projects"
               color="text-secondary-white"
               size="text-4xl"
             />
             <FunctionStyle label="," />
-            <NavButton to="aboutme" label="About Me" color="text-secondary-white" size="text-4xl" />
+            <NavButton
+              to="#aboutme"
+              label="About Me"
+              color="text-secondary-white"
+              size="text-4xl"
+            />
             <FunctionStyle label=") => {" />
-            <NavButton label="HIRE ME" color="text-cyan-400" size="text-5xl" />
+            <NavButton
+              to={"mailto:goncalo.estrelado@hotmail.com"}
+              label="HIRE ME"
+              color="text-cyan-400"
+              size="text-5xl"
+            />
             <FunctionStyle label="})" />
           </div>
         </div>

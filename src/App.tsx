@@ -1,5 +1,6 @@
 import "./App.css";
 import { Navbar, Footer, Projects, AboutMe, Presentation, Slide } from "./components";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function App() {
   return (
@@ -9,6 +10,14 @@ function App() {
         className="z-10 absolute left-0 top-0 h-screen"
         alt="code-numbers"
       />
+      <div className="absolute right-0 top-0 text-white flex space-x-5 m-10">
+        <a href="https://www.linkedin.com/in/goncalo-estrelado/" target="_blank" rel="noreferrer">
+          <FaLinkedin size={30} />
+        </a>
+        <a href="https://github.com/ST4R20RD" target="_blank" rel="noreferrer">
+          <FaGithub size={30} />
+        </a>
+      </div>
       <Navbar />
       <Slide>
         <Presentation />

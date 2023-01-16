@@ -54,7 +54,7 @@ export function Presentation() {
               Download CV
             </button>
             <a
-              href="#"
+              href="mailto:goncalo.estrelado@hotmail.com"
               className="bg-cyan-400 text-dark-blue mx-4 p-4 border border-cyan-400 rounded-lg"
             >
               Contact Me
