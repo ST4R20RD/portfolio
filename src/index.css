@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: Proxima Nova, system-ui, sans-serif;
-      }
-    h1 {
-      @apply text-7xl;
-    }
-    h2 {
-      @apply text-5xl;
-    }
-    h3 {
-      @apply text-xl;
-    }
+  html {
+    font-family: "Proxima Nova", system-ui, sans-serif;
+    src: url("/public/fonts/ProximaNova/Proxima\ Nova.otf") format("opentype");
   }
+  h1 {
+    @apply text-7xl;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
