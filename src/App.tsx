@@ -1,10 +1,11 @@
 import "./App.css";
-import { Navbar, Footer, Projects, AboutMe, Presentation, Slide } from "./components";
+import { Navbar } from "./components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Home } from "./components/Home";
 
 function App() {
   return (
-    <div className="bg-dark-blue bg-code-texture2 bg-no-repeat bg-[110%_center] bg-[length:800px] h-screen w-screen pt-8 overflow-x-hidden overflow-y-scroll scrollbar-hide">
+    <div className="bg-dark-blue bg-code-texture2 bg-no-repeat bg-[110%_center] bg-[length:800px] h-screen w-screen ">
       <img
         src="/images/code-numbers.png"
         className="z-10 absolute left-0 top-0 h-screen"
@@ -19,16 +20,7 @@ function App() {
         </a>
       </div>
       <Navbar />
-      <Slide>
-        <Presentation />
-      </Slide>
-      <Slide>
-        <Projects />
-      </Slide>
-      <Slide>
-        <AboutMe />
-      </Slide>
-      <Footer />
+      <Home />
     </div>
   );
 }

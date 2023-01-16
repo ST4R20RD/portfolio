@@ -5,3 +5,4 @@ export { AboutMe } from "./AboutMe";
 export { Presentation } from "./Presentation";
 export { FunctionStyle } from "./FunctionStyle";
 export { Slide } from "./Slide";
+export { Home } from "./Home";

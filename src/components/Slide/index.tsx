@@ -1,7 +1,5 @@
 export function Slide({ children }: any) {
   return (
-    <div className="h-screen flex flex-col justify-center">
-      <div className="snap-center h-full">{children}</div>
-    </div>
+    <div className="snap-start snap-always h-screen flex flex-col justify-center">{children}</div>
   );
 }
