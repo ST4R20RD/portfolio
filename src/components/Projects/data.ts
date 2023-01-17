@@ -6,6 +6,7 @@ export const PROJECTS: Array<{
   techs: Array<string>;
   github: string;
   live: string;
+  warning?: string;
 }> = [
   {
     image: "/images/24grind-frontPic.png",
@@ -16,6 +17,7 @@ export const PROJECTS: Array<{
     techs: ["ReactJS", "Typescript", "Tailwind", "Axios", "React-router-dom", "Formik"],
     github: "https://github.com/ST4R20RD/24Grind-frontend",
     live: "https://24grind.netlify.app/",
+    warning: "BE not currently working, we are actively working on a fix.",
   },
   {
     image: "/images/tesla-clone-frontPic.png",
@@ -54,6 +56,8 @@ export const PROJECTS: Array<{
     ],
     github: "https://github.com/RaAlMer/Nani-frontend",
     live: "https://nani-app.netlify.app/",
+    warning:
+      "Not currently working because the service where the BE was allocated turned payed in the last few month, I am working on an alternative",
   },
   {
     image: "/images/penalty-frontPic.png",

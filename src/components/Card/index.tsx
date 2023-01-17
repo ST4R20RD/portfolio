@@ -10,9 +10,19 @@ interface CardProps {
   techs: Array<string>;
   github: string;
   live: string;
+  warning?: string;
 }
 
-export function Card({ image, name, subTitle, description, techs, github, live }: CardProps) {
+export function Card({
+  image,
+  name,
+  subTitle,
+  description,
+  techs,
+  github,
+  live,
+  warning,
+}: CardProps) {
   const [showMoreDesc, setShowMoreDesc] = useState<boolean>(false);
   return (
     <div className="bg-[#0C0F16] p-4 m-5 border-t border-cyan-400 flex items-center justify-center w-[800px] max-h-[345px]">
@@ -49,6 +59,7 @@ export function Card({ image, name, subTitle, description, techs, github, live }
           })}
         </div>
         <div className="flex justify-end text-3xl my-2">
+          <p className="text-red-600 text-xs">{warning}</p>
           <a href={github} target="_blank" rel="noreferrer">
             <TbBrandGithub className="mx-4" />
           </a>
